@@ -6,7 +6,7 @@
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 1) 100%
     ),
-    url("https://cdn.hipwallpaper.com/i/98/21/dUyCkp.jpg");
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/6dea7743-5586-45d1-89a2-9569b1bb0340/9fac70d6-7da2-4c9c-8d52-10ec226bc6cb/KE-en-20220207-popsignuptwoweeks-perspective_alpha_website_small.jpg");
   background-size: cover;
   position: relative;
 
@@ -16,6 +16,13 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      z-index: 1010;
+      position: relative;
+      background-color: rgba(0,0,0,0.6);
+      -webkit-transition: background-color .5s;
+      -o-transition: background-color .5s;
+      -moz-transition: background-color .5s;
+      transition: background-color .5s;
 
       .logo {
         height: 40px;
@@ -26,10 +33,11 @@
         border: none;
         color: white;
         border-radius: 5px;
-        padding: 5px 15px;
+        padding: 0.5rem 15px;
         font-size: 16px;
         font-weight: 500;
         cursor: pointer;
+        text-decoration: none;
       }
     }
   }
@@ -48,10 +56,12 @@
 
     h1 {
       font-size: 50px;
+      width: 40%;
+      text-align: center;
     }
 
     h2 {
-      margin: 20px;
+      margin: 1rem;
     }
 
     p {

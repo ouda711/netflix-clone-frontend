@@ -6,9 +6,12 @@
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 1) 100%
     ),
-    url("http://mppmduse2pmpovwapp.azurewebsites.net/wp-content/uploads/2019/09/netflix-background-9.jpg");
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/6dea7743-5586-45d1-89a2-9569b1bb0340/9fac70d6-7da2-4c9c-8d52-10ec226bc6cb/KE-en-20220207-popsignuptwoweeks-perspective_alpha_website_small.jpg");
   background-size: cover;
   position: relative;
+  min-height: 100%;
+  min-width: 100%;
+
 
   .top {
     .wrapper {
@@ -16,6 +19,11 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      background-color: rgba(0,0,0,0.6);
+      -webkit-transition: background-color .5s;
+      -o-transition: background-color .5s;
+      -moz-transition: background-color .5s;
+      transition: background-color .5s;
 
       .logo {
         height: 40px;
@@ -40,7 +48,7 @@
       height: 300px;
       padding: 30px;
       border-radius: 5px;
-      background-color: var(--main-color);
+      background-color: rgba(0,0,0,0.75);
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -51,6 +59,7 @@
         background-color: gray;
         color: white;
         padding-left: 10px;
+        margin-bottom: 0.95rem;
 
         &::placeholder {
           color: lightgray;
@@ -69,9 +78,17 @@
       }
 
       span {
-        color: lightgray;
-        b {
+        color: #737373;
+        margin: 0.75rem 0;
+        a {
           color: white;
+          text-decoration: none;
+        }
+        a:hover{
+          text-decoration: underline;
+        }
+        small{
+          color: #737373;
         }
       }
     }
